@@ -13,13 +13,11 @@ import com.example.devops.R;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.zip.Inflater;
-
-public class HomeFragment extends Fragment {
+public class Frag1 extends Fragment {
     @Nullable
     @org.jetbrains.annotations.Nullable
     @Override
     public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.main_activity, container, false);
     }
 }

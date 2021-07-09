@@ -1,24 +1,22 @@
 package com.example.devops;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import com.example.devops.Profile.Login;
+import com.example.devops.SearchBanks.Search;
+import com.example.devops.fragments.Frag1;
 import com.example.devops.fragments.Frag2;
 import com.example.devops.fragments.Frag3;
-import com.example.devops.fragments.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 
 public class Main extends AppCompatActivity {
 
@@ -26,7 +24,13 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        BottomNavigationView navView = findViewById(R.id.nav_view);
+        Button login = findViewById(R.id.login);
+        login.setOnClickListener(v -> openLogin());
+
+        Button search = findViewById(R.id.search);
+        search.setOnClickListener(v -> openSearch());
+
+        BottomNavigationView navView = findViewById(R.id.bottom_navigation);
         navView.setOnNavigationItemSelectedListener(navListener);
     }
     private final BottomNavigationView.OnNavigationItemSelectedListener navListener =
@@ -37,7 +41,7 @@ public class Main extends AppCompatActivity {
 
             switch(item.getItemId()) {
                 case R.id.navigation_home:
-                    selectedFragment = new HomeFragment();
+                    selectedFragment = new Frag1();
                     break;
                 case R.id.navigation_dashboard:
                     selectedFragment = new Frag2();
@@ -46,11 +50,21 @@ public class Main extends AppCompatActivity {
                     selectedFragment = new Frag3();
                     break;
             }
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_view_tag,
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     selectedFragment).commit();
 
             return true;
         }
     };
+//Ronald put code in Login class
+    public void openLogin(){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }
+    //Shashank put code in Search class
+    public void openSearch(){
+        Intent intent = new Intent(this, Search.class);
+        startActivity(intent);
+    }
 
 }
