@@ -23,6 +23,7 @@ public class Main extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.main_activity);
 
         Button login = findViewById(R.id.login);
         login.setOnClickListener(v -> openLogin());
