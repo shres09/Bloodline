@@ -28,6 +28,7 @@ import com.example.devops.fragments.Frag3;
 import com.example.devops.fragments.Frag4;
 import com.example.devops.fragments.Frag5;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.iammert.library.readablebottombar.ReadableBottomBar;
 
 import org.jetbrains.annotations.NotNull;
 
