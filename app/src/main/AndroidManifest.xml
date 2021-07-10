@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.devops">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.devops"
+    android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+    >
 
     <application
         android:allowBackup="true"
@@ -9,10 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevOps">
+
         <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyClbVTS4V8w-CuJEIdAbhCcLISaXsd5vjI"/>
-        <activity
-            android:name=".Main"
-            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".Main"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

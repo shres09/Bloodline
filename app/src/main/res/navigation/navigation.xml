@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/frag1">
+
+    <fragment
+        android:id="@+id/frag1"
+        android:name="com.example.devops.fragments.Frag1"
+        android:label="fragment_frag1"
+        tools:layout="@layout/fragment_frag1" />
+    <fragment
+        android:id="@+id/frag2"
+        android:name="com.example.devops.fragments.Frag2"
+        android:label="fragment_frag2"
+        tools:layout="@layout/fragment_frag2" />
+    <fragment
+        android:id="@+id/frag3"
+        android:name="com.example.devops.fragments.Frag3"
+        android:label="fragment_frag3"
+        tools:layout="@layout/fragment_frag3" />
+    <fragment
+        android:id="@+id/frag4"
+        android:name="com.example.devops.fragments.Frag4"
+        android:label="fragment_frag4"
+        tools:layout="@layout/fragment_frag4" />
+    <fragment
+        android:id="@+id/frag5"
+        android:name="com.example.devops.fragments.Frag5"
+        android:label="fragment_frag5"
+        tools:layout="@layout/fragment_frag5" />
+</navigation>
