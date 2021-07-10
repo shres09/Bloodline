@@ -22,6 +22,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.devops.R;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -51,10 +52,10 @@ import java.util.List;
 import java.util.Locale;
 
 import static android.content.ContentValues.TAG;
+import static android.provider.Contacts.SettingsColumns.KEY;
 import static com.google.android.libraries.places.widget.Autocomplete.*;
 
-public class MapsActivity extends FragmentActivity
-{
+public class Search extends FragmentActivity{
 
     Location cloc;
     FusedLocationProviderClient client;
@@ -78,11 +79,11 @@ public class MapsActivity extends FragmentActivity
         locations.add(new LatLng(40, -79.31));
         locations.add(new LatLng(35, -12));
 
-        if (ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(Search.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             obtainLocation();
         } else {
             Toast.makeText(this, "Allow location premission", Toast.LENGTH_SHORT).show();
-            ActivityCompat.requestPermissions(MapsActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+            ActivityCompat.requestPermissions(Search.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
         }
 
         setCurrentLoc = findViewById(R.id.currentLocButton);
@@ -91,9 +92,9 @@ public class MapsActivity extends FragmentActivity
             public void onClick(View v) {
 
                 if (cloc != null)
-                    Toast.makeText(MapsActivity.this, "Location is set", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Search.this, "Location is set", Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(MapsActivity.this, "Please turn on the location and set the location", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Search.this, "Please turn on the location and set the location", Toast.LENGTH_SHORT).show();
                 //close activity
             }
         });
@@ -108,7 +109,7 @@ public class MapsActivity extends FragmentActivity
 
                 // Start the autocomplete intent.
                 Intent intent = new IntentBuilder(AutocompleteActivityMode.FULLSCREEN, fields)
-                        .build(MapsActivity.this);
+                        .build(Search.this);
                 startActivityForResult(intent, 100);
 
             }
