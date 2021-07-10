@@ -32,6 +32,8 @@
         <activity android:name=".Recycler.Donors"/>
         <activity android:name=".Static.InfoDesk"/>
         <activity android:name=".Static.Procedure"/>
+        <activity android:name=".Static.Request"/>
+        <activity android:name=".Vets.Vets"/>
 
 
         <meta-data

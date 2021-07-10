@@ -19,6 +19,7 @@ import com.example.devops.Static.Drive;
 import com.example.devops.Static.Funds;
 import com.example.devops.Static.InfoDesk;
 import com.example.devops.Static.Procedure;
+import com.example.devops.Static.Request;
 import com.example.devops.Vets.Vets;
 
 
@@ -94,7 +95,7 @@ public class Frag1 extends Fragment {
         request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                Intent intent = new Intent(getActivity(), Request.class);
                 startActivity(intent);
 
             }
