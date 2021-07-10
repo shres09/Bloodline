@@ -30,6 +30,8 @@
         <activity android:name=".Static.Camp"/>
         <activity android:name=".Main"/>
         <activity android:name=".Recycler.Donors"/>
+        <activity android:name=".Static.InfoDesk"/>
+        <activity android:name=".Static.Procedure"/>
 
 
         <meta-data
