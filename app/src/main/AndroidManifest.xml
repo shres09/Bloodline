@@ -19,6 +19,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Selection"/>
+        <activity android:name=".SearchBanks.Search"/>
+        <activity android:name=".start.Slide1"/>
+        <activity android:name=".start.Slide2"/>
+        <activity android:name=".start.Slide3"/>
+        <activity android:name=".Static.Funds"/>
+        <activity android:name=".Static.Drive"/>
+        <activity android:name=".Static.Camp"/>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyClbVTS4V8w-CuJEIdAbhCcLISaXsd5vjI" />
