@@ -9,14 +9,18 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.devops.MainActivity;
 import com.example.devops.R;
+import com.example.devops.Recycler.Donors;
 import com.example.devops.SearchBanks.Search;
 import com.example.devops.start.Slide1;
 
 
 public class Frag4 extends Fragment {
+
+    public View v;
 
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,9 +62,21 @@ public class Frag4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frag4, container, false);
+        v = inflater.inflate(R.layout.fragment_frag4, container, false);
+        configureButton();
+        return v;
 
+    }
+    private void configureButton() {
 
+        ImageButton btn1 = (ImageButton) v.findViewById(R.id.mapbut);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Search.class);
+                startActivity(intent);
 
+            }
+        });
     }
 }

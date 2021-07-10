@@ -194,12 +194,14 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:id="@+id/nameT"
+                    android:text="name"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="50dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
+                    android:text="grp"
                     android:id="@+id/bloodT"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="80dp"/>
@@ -208,6 +210,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:id="@+id/numberT"
+                    android:text="number"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="110dp"/>
 

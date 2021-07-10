@@ -22,21 +22,24 @@ public class Request extends AppCompatActivity {
         setContentView(R.layout.request_activity);
 
         Button check = findViewById(R.id.check);
-
-        check.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
         name = (EditText) findViewById(R.id.organ);
         blood = (EditText) findViewById(R.id.bloodgrp);
         contact = (EditText) findViewById(R.id.number);
 
-        TextView nameg = findViewById(R.id.nameT);
-        name.setText(name.getText().toString());
+        check.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                int ViewID = view.getId();
+                if(ViewID == R.id.check){
+                    TextView nameg = findViewById(R.id.nameT);
+                    name.setText(name.getText().toString());
 
-        TextView bloodg = findViewById(R.id.bloodT);
-        blood.setText(blood.getText().toString());
+                    TextView bloodg = findViewById(R.id.bloodT);
+                    blood.setText(blood.getText().toString());
 
-        TextView contactg = findViewById(R.id.number);
-        contactg.setText(contact.getText().toString());
+                    TextView contactg = findViewById(R.id.number);
+                    contactg.setText(contact.getText().toString());
+
+                }
             }
         });
 
