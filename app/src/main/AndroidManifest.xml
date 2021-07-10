@@ -24,6 +24,9 @@
         </activity>
         <activity android:name=".Selection"/>
         <activity android:name=".SearchBanks.Search"/>
+        <activity android:name=".start.Slide1"/>
+        <activity android:name=".start.Slide2"/>
+        <activity android:name=".start.Slide3"/>
 
 
     </application>
