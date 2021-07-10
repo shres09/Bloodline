@@ -7,8 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.devops.start.Slide1;
-//unused
-//import com.example.devops.databinding.MainActivityBinding;
+
 
 public class MainActivity extends AppCompatActivity {
 
