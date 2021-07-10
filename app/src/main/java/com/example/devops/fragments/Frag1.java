@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.devops.Profile.Login;
+import com.example.devops.Profile.LoginActivity;
 import com.example.devops.R;
 import com.example.devops.SearchBanks.Search;
 import com.example.devops.Static.Camp;
@@ -93,7 +93,7 @@ public class Frag1 extends Fragment {
         request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Login.class);
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
 
             }
