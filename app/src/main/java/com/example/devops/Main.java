@@ -28,7 +28,6 @@ import com.example.devops.fragments.Frag3;
 import com.example.devops.fragments.Frag4;
 import com.example.devops.fragments.Frag5;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.iammert.library.readablebottombar.ReadableBottomBar;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -48,29 +47,7 @@ public class Main extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,
                 new Frag1()).commit();
 
-        ImageButton blood = findViewById(R.id.bloodbank);
-        blood.setOnClickListener(v -> gosearch());
 
-        ImageButton request = findViewById(R.id.request);
-        request.setOnClickListener(v -> gologin());
-
-        ImageButton vets = findViewById(R.id.vets);
-        vets.setOnClickListener(v -> govets());
-
-        ImageButton funds = findViewById(R.id.funds);
-        funds.setOnClickListener(v -> gofunds());
-
-        ImageButton info = findViewById(R.id.info);
-        info.setOnClickListener(v -> goinfo());
-
-        ImageButton procedure = findViewById(R.id.procedure);
-        procedure.setOnClickListener(v -> goprocedure());
-
-        ImageButton camp = findViewById(R.id.camp);
-        camp.setOnClickListener(v -> gocamp());
-
-        ImageButton drive = findViewById(R.id.drive);
-        drive.setOnClickListener(v -> godrive());
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
