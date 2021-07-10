@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 
-import com.example.devops.Profile.Login;
+import com.example.devops.Profile.LoginActivity;
 import com.example.devops.SearchBanks.Search;
 import com.example.devops.Static.Camp;
 import com.example.devops.Static.Drive;
@@ -28,7 +28,7 @@ import com.example.devops.fragments.Frag3;
 import com.example.devops.fragments.Frag4;
 import com.example.devops.fragments.Frag5;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.iammert.library.readablebottombar.ReadableBottomBar;
+//import com.iammert.library.readablebottombar.ReadableBottomBar;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -106,7 +106,7 @@ public class Main extends AppCompatActivity {
         startActivity(intent);
     }
     public void gologin(){
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
     public void govets(){
