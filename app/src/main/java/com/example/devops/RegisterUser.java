@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.devops.fragments.Frag1;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -49,6 +50,9 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         progressBar = findViewById(R.id.progressBar);
+
+        Button dash = findViewById(R.id.dash);
+        dash.setOnClickListener(v -> gotomain());
 
 
 
@@ -136,5 +140,9 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                 }
             }
         });
+    }
+    public void gotomain(){
+        Intent intent = new Intent(this, Frag1.class);
+        startActivity(intent);
     }
 }

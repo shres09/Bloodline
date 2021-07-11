@@ -37,6 +37,9 @@
         <activity android:name=".Static.FAQ"/>
         <activity android:name=".organisation.Dashboard"/>
         <activity android:name=".organisation.RequestView"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".RegisterUser"/>
+
 
 
         <meta-data
