@@ -11,23 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevOps">
-        <activity android:name=".Profile"></activity>
-        <activity android:name=".RegisterUser" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".Selection" />
-        <activity android:name=".SearchBanks.Search" />
-        <activity android:name=".start.Slide1" />
-        <activity android:name=".start.Slide2" />
-        <activity android:name=".start.Slide3" />
-        <activity android:name=".Static.Funds" />
-        <activity android:name=".Static.Drive" />
-        <activity android:name=".Static.Camp" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyClbVTS4V8w-CuJEIdAbhCcLISaXsd5vjI" />
-
-        <activity android:name=".Main" />
+        <activity android:name=".Profile"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +19,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Selection"/>
+        <activity android:name=".SearchBanks.Search"/>
+        <activity android:name=".start.Slide1"/>
+        <activity android:name=".start.Slide2"/>
+        <activity android:name=".start.Slide3"/>
+        <activity android:name=".Static.Funds"/>
+        <activity android:name=".Static.Drive"/>
+        <activity android:name=".Static.Camp"/>
+        <activity android:name=".Main"/>
+        <activity android:name=".Recycler.Donors"/>
+        <activity android:name=".Static.InfoDesk"/>
+        <activity android:name=".Static.Procedure"/>
+        <activity android:name=".Static.Request"/>
+        <activity android:name=".Vets.Vets"/>
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyClbVTS4V8w-CuJEIdAbhCcLISaXsd5vjI" />
+
+
+
+
+
+
     </application>
 
 </manifest>

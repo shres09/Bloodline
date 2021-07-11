@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="83dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginRight="84dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.026"
+                app:srcCompat="@drawable/reqblood" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:text="Name of the Organisation:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+
+    <EditText
+        android:id="@+id/organ"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:ems="10"
+        android:hint="Enter Organisation"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:text="Blood Group:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <EditText
+        android:id="@+id/bloodgrp"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:ems="10"
+        android:hint="Blood group"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:text="Contact Information:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="317dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Urgent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761"
+        android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Check"
+                app:backgroundTint="#DD8B8B" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="373dp"
+                android:layout_height="179dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#F25278"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="25sp"
+                    android:text="Blood Type Request"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/nameT"
+                    android:text="name"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="grp"
+                    android:id="@+id/bloodT"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/numberT"
+                    android:text="number"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="110dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/req" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
