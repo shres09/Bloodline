@@ -11,23 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevOps">
-        <activity android:name=".Profile.LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".Selection"/>
-        <activity android:name=".SearchBanks.Search"/>
-        <activity android:name=".start.Slide1"/>
-        <activity android:name=".start.Slide2"/>
-        <activity android:name=".start.Slide3"/>
-        <activity android:name=".Static.Funds"/>
-        <activity android:name=".Static.Drive"/>
-        <activity android:name=".Static.Camp"/>
-
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".Selection" />
+        <activity android:name=".SearchBanks.Search" />
+        <activity android:name=".start.Slide1" />
+        <activity android:name=".start.Slide2" />
+        <activity android:name=".start.Slide3" />
+        <activity android:name=".Static.Funds" />
+        <activity android:name=".Static.Drive" />
+        <activity android:name=".Static.Camp" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -41,7 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
