@@ -1,17 +1,15 @@
 package com.example.devops.fragments;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.devops.Profile.LoginActivity;
+import androidx.fragment.app.Fragment;
+
+import com.example.devops.ProfileActivity;
 import com.example.devops.R;
 import com.example.devops.SearchBanks.Search;
 import com.example.devops.Static.Camp;
@@ -95,7 +93,10 @@ public class Frag1 extends Fragment {
         request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 Intent intent = new Intent(getActivity(), Request.class);
+
                 startActivity(intent);
 
             }

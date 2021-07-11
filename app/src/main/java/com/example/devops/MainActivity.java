@@ -1,10 +1,10 @@
 package com.example.devops;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.devops.start.Slide1;
 
@@ -24,4 +24,5 @@ public class MainActivity extends AppCompatActivity {
             MainActivity.this.finish();
         }, SPLASH_DISPLAY_LENGTH);
     }
+
 }
