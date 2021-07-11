@@ -1,6 +1,7 @@
 package com.example.devops.Vets;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageButton;
 
@@ -43,8 +44,10 @@ public class Vets extends AppCompatActivity {
         startActivity(intent);
     }
     public void openinfo(){
-        Intent intent = new Intent(this, InfoDogs.class);
-        startActivity(intent);
+        Intent viewIntent =
+                new Intent("android.intent.action.VIEW",
+                        Uri.parse("https://www.akcchf.org/educational-resources/library/articles/articles/canine-blood-donation.html"));
+        startActivity(viewIntent);
     }
     public void openfunds(){
         Intent intent = new Intent(this, Funds.class);

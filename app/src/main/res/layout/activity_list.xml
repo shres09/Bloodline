@@ -5,44 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="142dp"
+        android:layout_height="61dp"
+        android:text="Post"
+        android:textColor="@color/black"
+        app:backgroundTint="#F1E1E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="233dp">
+        tools:layout_editor_absoluteX="-16dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:srcCompat="@drawable/request1" />
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/request1" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:srcCompat="@drawable/request2" />
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/request2" />
 
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:srcCompat="@drawable/post1" />
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/post1" />
 
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            app:srcCompat="@drawable/post2" />
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:srcCompat="@drawable/post2" />
 
             <ImageView
                 android:id="@+id/imageView15"
@@ -50,12 +62,15 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 app:srcCompat="@drawable/post3" />
+
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 app:srcCompat="@drawable/post4" />
+
+
 
 
         </LinearLayout>
