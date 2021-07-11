@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.414" />
 
     <EditText
-        android:id="@+id/bloodgrp"
+        android:id="@+id/grp"
         android:layout_width="317dp"
         android:layout_height="49dp"
         android:layout_marginStart="37dp"
@@ -193,7 +193,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:id="@+id/nameT"
+                    android:id="@+id/organ_name"
                     android:text="name"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="50dp"/>
@@ -202,7 +202,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:text="grp"
-                    android:id="@+id/bloodT"
+                    android:id="@+id/blood_type"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="80dp"/>
                 <TextView

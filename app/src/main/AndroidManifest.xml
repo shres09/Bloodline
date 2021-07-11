@@ -34,6 +34,9 @@
         <activity android:name=".Static.Procedure"/>
         <activity android:name=".Static.Request"/>
         <activity android:name=".Vets.Vets"/>
+        <activity android:name=".Static.FAQ"/>
+        <activity android:name=".organisation.Dashboard"/>
+        <activity android:name=".organisation.RequestView"/>
 
 
         <meta-data
